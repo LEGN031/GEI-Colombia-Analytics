@@ -1,0 +1,43 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(15, 66, 41, 0.8), rgba(25, 135, 84, 0.7)), url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
+    height: 100vh;
+    min-height: 600px;
+}
+
+/* Pipeline Flow */
+.pipeline-flow .fa-arrow-right {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+}
+
+/* Cards Hover */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Technologies Icons */
+.fa-brands, .fa-solid {
+    transition: color 0.3s ease;
+}
+.fa-python:hover { color: #3776AB; }
+.fa-database:hover { color: #336791; }
+.fa-brain:hover { color: #F7931E; }
+.fa-chart-line:hover { color: #3F4F75; }
+.fa-github:hover { color: #181717; }

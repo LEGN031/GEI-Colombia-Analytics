@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEI Colombia - Emisiones Netas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-success fw-bold" href="#"><i class="fa-solid fa-leaf"></i> GEI Analytics</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#problema">Problema</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pipeline">Pipeline</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#eda">EDA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ml">Machine Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-success ms-2" href="../app.py" target="_blank">Ver Dashboard</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Análisis de Emisiones Netas de Carbono en Colombia</h1>
+            <p class="lead mt-3">Explorando el impacto territorial de los gases de efecto invernadero mediante Ciencia de Datos y Machine Learning.</p>
+            <div class="mt-4">
+                <a href="#problema" class="btn btn-light btn-lg text-success fw-bold me-3">Descubrir Proyecto</a>
+                <a href="#" class="btn btn-outline-light btn-lg fw-bold" onclick="alert('Inicia Streamlit localmente para ver el dashboard!')">Lanzar Dashboard</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section id="problema" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="fw-bold text-success">El Desafío Ambiental</h2>
+                    <p>El cambio climático exige decisiones informadas. Las emisiones de Gases de Efecto Invernadero (GEI) varían dramáticamente entre departamentos colombianos debido a sus actividades económicas y coberturas forestales.</p>
+                    <p>La métrica más importante es la <strong>Emisión Neta</strong>, la cual considera no solo lo que contaminamos, sino lo que la naturaleza absorbe.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3233/3233483.png" alt="Cambio Climático" class="img-fluid w-50">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OBJETIVOS -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold text-success mb-5">Objetivos del Proyecto</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-map-location-dot fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Identificar Impacto Territorial</h5>
+                            <p class="card-text">Descubrir cuáles departamentos son los mayores emisores y cuáles actúan como vitales sumideros de carbono.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-industry fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title fw-bold">Análisis Sectorial</h5>
+                            <p class="card-text">Entender la contribución exacta de cada sector económico (Energía, AFOLU, Residuos) al balance nacional.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-robot fa-3x text-success mb-3"></i>
+                            <h5 class="card-title fw-bold">Modelado Predictivo</h5>
+                            <p class="card-text">Construir algoritmos de Machine Learning capaces de estimar emisiones futuras basadas en características clave.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIPELINE & ETL -->
+    <section id="pipeline" class="py-5 text-white bg-success">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Pipeline de Datos (ETL)</h2>
+            <div class="d-flex justify-content-center align-items-center flex-wrap gap-3 pipeline-flow">
+                <div class="p-3 bg-white text-success rounded shadow fw-bold">Datos Abiertos</div>
+                <i class="fa-solid fa-arrow-right"></i>
+                <div class="p-3 bg-white text-success rounded shadow fw-bold">Limpieza y Filtro</div>
+                <i class="fa-solid fa-arrow-right"></i>
+                <div class="p-3 bg-white text-success rounded shadow fw-bold">Feature Engineering</div>
+                <i class="fa-solid fa-arrow-right"></i>
+                <div class="p-3 bg-white text-success rounded shadow fw-bold">Modelado ML</div>
+            </div>
+            <p class="mt-4">El proceso de ETL abordó la transformación de las nomenclaturas, el tratamiento de valores nulos, y la estandarización de columnas para evitar el Data Leakage al momento de predecir emisiones netas.</p>
+        </div>
+    </section>
+
+    <!-- EDA GALERÍA -->
+    <section id="eda" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold text-success mb-5">Análisis Exploratorio (EDA)</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <img src="../images/eda/02_top10_emisiones.png" onerror="this.src='https://via.placeholder.com/400x300?text=Top+10+Emisiones'" class="img-fluid rounded shadow" alt="EDA">
+                </div>
+                <div class="col-md-4">
+                    <img src="../images/eda/03_top10_absorciones.png" onerror="this.src='https://via.placeholder.com/400x300?text=Top+10+Absorciones'" class="img-fluid rounded shadow" alt="EDA">
+                </div>
+                <div class="col-md-4">
+                    <img src="../images/eda/06_sectores_comparativa.png" onerror="this.src='https://via.placeholder.com/400x300?text=Sectores'" class="img-fluid rounded shadow" alt="EDA">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MACHINE LEARNING -->
+    <section id="ml" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold text-success mb-5">Modelos de Machine Learning</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold text-primary">Regresión Lineal</h4>
+                            <p>Un enfoque clásico que demostró cómo los gases equivalentes (CO2eq, CH4eq) se combinan de forma aditiva perfecta para formar las emisiones totales y netas.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fa-solid fa-check text-success"></i> Altamente Interpretable</li>
+                                <li><i class="fa-solid fa-check text-success"></i> Escalado Eficiente</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold text-success">Árbol de Decisión & Random Forest</h4>
+                            <p>Modelos no lineales capaces de aislar dinámicas sectoriales complejas (ej. deforestación) encontrando umbrales lógicos de contaminación.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fa-solid fa-check text-success"></i> Reglas de Negocio Explícitas</li>
+                                <li><i class="fa-solid fa-check text-success"></i> Alta Precisión R² > 0.95</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECNOLOGÍAS -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold text-success mb-4">Tecnologías Utilizadas</h2>
+            <div class="d-flex justify-content-center gap-4 flex-wrap fs-1 text-secondary">
+                <i class="fa-brands fa-python" title="Python"></i>
+                <i class="fa-solid fa-database" title="Pandas & Numpy"></i>
+                <i class="fa-solid fa-brain" title="Scikit-Learn"></i>
+                <i class="fa-solid fa-chart-line" title="Plotly & Seaborn"></i>
+                <i class="fa-brands fa-github" title="GitHub"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section id="equipo" class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Autor</h2>
+            <p class="lead">Desarrollado como Proyecto de Talento Tech - Ciencia de Datos.</p>
+            <div class="mt-4">
+                <a href="https://github.com/LEGN031/GEI-Colombia-Analytics" target="_blank" class="btn btn-outline-light me-2"><i class="fa-brands fa-github"></i> Repositorio GitHub</a>
+                <a href="#" class="btn btn-outline-primary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-3 bg-black text-white text-center">
+        <p class="mb-0">© 2026 GEI Analytics Colombia. MIT License.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
