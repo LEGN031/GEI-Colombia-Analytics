@@ -1,0 +1,33 @@
+# ==============================================================================
+# Filtros específicos del proyecto
+# ==============================================================================
+
+# Ignorar todas las imágenes generadas en EDA y ML
+**/EDA/images/eda/*.png
+**/ML/images/ml/*.png
+
+# Si prefieres curarte en salud e ignorar cualquier imagen en esas carpetas:
+# **/EDA/images/
+# **/ML/images/
+
+# Ignorar los scripts de Python encargados de crear o actualizar notebooks
+**/EDA/create_colab_notebook.py
+**/EDA/update_notebook.py
+**/ML/create_ml_dt_notebook.py
+**/ML/create_ml_notebook.py
+
+
+# ==============================================================================
+# Buenas prácticas adicionales (Opcional pero recomendado)
+# ==============================================================================
+
+# Archivos temporales de Jupyter Notebooks
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Entornos virtuales y caché de Python
+__pycache__/
+*.pyc
+.env
+venv/
+env/
