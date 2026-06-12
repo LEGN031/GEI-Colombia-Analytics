@@ -25,7 +25,7 @@ st.markdown("""
 # Cargar Dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv('datasets/dataset_limpio.csv', thousands=',')
+    df = pd.read_csv('Dataset/processed/dataset_limpio.csv', thousands=',')
     return df
 
 df = load_data()

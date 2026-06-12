@@ -23,7 +23,7 @@ El objetivo principal de este proyecto es realizar un análisis integral de los 
 ├── requirements.txt            # Dependencias del proyecto
 ├── train_and_save_models.py    # Script para generar y guardar los modelos ML
 ├── models/                     # Modelos guardados en formato .pkl
-├── datasets/                   # Dataset procesado (dataset_limpio.csv)
+├── Dataset/processed/          # Dataset procesado (dataset_limpio.csv)
 ├── images/                     # Gráficas generadas
 │   ├── eda/                    # Imágenes del Análisis Exploratorio
 │   └── ml/                     # Gráficas de evaluación de los modelos

@@ -15,7 +15,7 @@ print("Iniciando entrenamiento y serialización de modelos...")
 os.makedirs('models', exist_ok=True)
 
 # 1. Carga del Dataset
-df = pd.read_csv('datasets/dataset_limpio.csv', thousands=',')
+df = pd.read_csv('Dataset/processed/dataset_limpio.csv', thousands=',')
 
 # 2. Preparación (Data Leakage y Codificación)
 columnas_fuga = ['emisiones_totales', 'abosorciones_totales', 'mod', 'sub', 'nrom', 'categorias']
